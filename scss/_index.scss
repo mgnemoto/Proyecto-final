@@ -9,7 +9,7 @@
         "fooTop fooTop"
         "fooBot fooBot" ;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 170px auto auto auto 200px 40px ;
+        grid-template-rows: auto auto auto auto 200px 40px ;
     }
     header.head{grid-area: head;}
 
