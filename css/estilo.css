@@ -1200,3 +1200,383 @@ header.headC a, div.fooTopC ul a {
 
 body {
   margin: 0; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .gridCom {
+    display: grid;
+    grid-template-areas: "headCom" "encabezadoCom" "tortas" "galletas" "bundtcakes" "brownies"  "contacto" "footopCom" "foobotCom";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto 200px 40px; }
+  .headCom {
+    grid-area: headCom; }
+  .encabezadoCom {
+    grid-area: encabezadoCom; }
+  .comprar-tortas {
+    grid-area: tortas; }
+  .comprar-galletas {
+    grid-area: galletas; }
+  .comprar-bundtcakes {
+    grid-area: bundtcakes; }
+  .comprar-brownies {
+    grid-area: brownies; }
+  .datos-contacto {
+    grid-area: contacto; }
+  .fooTopCom {
+    grid-area: footopCom; }
+  .fooBotCom {
+    grid-area: foobotCom; }
+  .headCom {
+    background-size: cover;
+    background-color: #293735;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 1% 0;
+    overflow: hidden;
+    padding-top: 2%;
+    max-width: 100%; }
+    .headCom .headCom__lista {
+      padding-left: 5%;
+      transition: padding 1s; }
+      .headCom .headCom__lista:hover {
+        border-right: solid #efefef;
+        padding: 0 8%; }
+      .headCom .headCom__lista li {
+        width: 100%;
+        margin: 3% 0;
+        padding: 3% 0;
+        transition: border 0.5s; }
+        .headCom .headCom__lista li:hover {
+          border: solid #efefef; }
+        .headCom .headCom__lista li h2 {
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          font-size: 15px;
+          color: #efefef; }
+    .headCom .headCom__titulo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .headCom .headCom__titulo img {
+        width: 130px;
+        height: 70px;
+        padding-right: 30px; }
+      .headCom .headCom__titulo h1 {
+        display: none; }
+  .encabezadoCom {
+    margin-bottom: 1.5%; }
+    .encabezadoCom img {
+      width: 100%; }
+    .encabezadoCom div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fbf5ee;
+      padding: 4% 2%;
+      height: 130px; }
+      .encabezadoCom div h5 {
+        padding: 3% 0 3% 4%;
+        font-size: 19px;
+        font-weight: 600; }
+  .back-verde {
+    background-color: #293735;
+    color: #efefef;
+    font-weight: 500; }
+  .contacto-form {
+    padding: 0 3%; }
+  .fooTopCom {
+    background-color: #293735; }
+    .fooTopCom .fooTopCom__lista {
+      padding: 2% 0 0 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      .fooTopCom .fooTopCom__lista h2 {
+        color: #efefef;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5% 0; }
+    .fooTopCom .fooTopCom__topImgCom {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .fooTopCom .fooTopCom__topImgCom img {
+        width: 40px;
+        filter: grayscale(100%);
+        transition: filter 0.4s; }
+        .fooTopCom .fooTopCom__topImgCom img:hover {
+          filter: grayscale(0%); }
+  .fooBotCom {
+    display: flex;
+    align-items: center;
+    background-color: #293735;
+    margin-top: 1px;
+    overflow: hidden; }
+    .fooBotCom h4 {
+      color: #efefef;
+      padding: 20px;
+      font-size: 12px; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1048px) {
+  .gridCom {
+    display: grid;
+    grid-template-areas: "headCom headCom" "encabezadoCom encabezadoCom" "brownies galletas" "bundtcakes tortas" "contacto contacto" "footopCom footopCom" "foobotCom foobotCom";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto 200px 40px; }
+  .headCom {
+    grid-area: headCom; }
+  .encabezadoCom {
+    grid-area: encabezadoCom; }
+  .comprar-tortas {
+    grid-area: tortas; }
+  .comprar-galletas {
+    grid-area: galletas; }
+  .comprar-bundtcakes {
+    grid-area: bundtcakes; }
+  .comprar-brownies {
+    grid-area: brownies; }
+  .datos-contacto {
+    grid-area: contacto; }
+  .fooTopCom {
+    grid-area: footopCom; }
+  .fooBotCom {
+    grid-area: foobotCom; }
+  .headCom {
+    background-size: cover;
+    background-color: #293735;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 0 1% 0;
+    overflow: hidden; }
+    .headCom .headCom__lista {
+      padding: 2% 0 1% 0;
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      transition: border-top 0.5s; }
+      .headCom .headCom__lista:hover {
+        border-top: solid #efefef; }
+      .headCom .headCom__lista li {
+        transition: transform 0.4s; }
+        .headCom .headCom__lista li:hover {
+          transform: translateY(-7%); }
+        .headCom .headCom__lista li h2 {
+          width: 100%;
+          font-size: 17px;
+          color: #efefef; }
+    .headCom .headCom__titulo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      max-width: 100%; }
+      .headCom .headCom__titulo img {
+        width: 50px;
+        height: 50px; }
+      .headCom .headCom__titulo h1 {
+        width: 100%;
+        font-size: 25px;
+        color: #efefef; }
+  .encabezadoCom {
+    margin-bottom: 1.5%; }
+    .encabezadoCom img {
+      width: 100%; }
+    .encabezadoCom div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fbf5ee;
+      padding: 4% 2%;
+      height: 130px; }
+      .encabezadoCom div h5 {
+        padding: 3% 0 3% 4%;
+        font-size: 19px;
+        font-weight: 600; }
+  .back-verde {
+    background-color: #293735;
+    color: #efefef;
+    font-weight: 500; }
+  .contacto-form {
+    padding: 0 3%; }
+  .fooTopCom {
+    background-color: #293735; }
+    .fooTopCom .fooTopCom__lista {
+      padding: 2% 0 0 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      .fooTopCom .fooTopCom__lista h2 {
+        color: #efefef;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5% 0; }
+    .fooTopCom .fooTopCom__topImgCom {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .fooTopCom .fooTopCom__topImgCom img {
+        width: 40px;
+        filter: grayscale(100%);
+        transition: filter 0.4s; }
+        .fooTopCom .fooTopCom__topImgCom img:hover {
+          filter: grayscale(0%); }
+  .fooBotCom {
+    display: flex;
+    align-items: center;
+    background-color: #293735;
+    margin-top: 1px;
+    overflow: hidden; }
+    .fooBotCom h4 {
+      color: #efefef;
+      padding: 20px;
+      font-size: 12px; } }
+
+@media only screen and (min-width: 1048px) {
+  .gridCom {
+    display: grid;
+    grid-template-areas: "headCom headCom headCom headCom" "encabezadoCom encabezadoCom encabezadoCom encabezadoCom" "brownies galletas bundtcakes tortas" "contacto contacto contacto contacto" "footopCom footopCom footopCom footopCom" "foobotCom foobotCom foobotCom foobotCom";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto 200px 40px; }
+  .headCom {
+    grid-area: headCom; }
+  .encabezadoCom {
+    grid-area: encabezadoCom; }
+  .comprar-tortas {
+    grid-area: tortas; }
+  .comprar-galletas {
+    grid-area: galletas; }
+  .comprar-bundtcakes {
+    grid-area: bundtcakes; }
+  .comprar-brownies {
+    grid-area: brownies; }
+  .datos-contacto {
+    grid-area: contacto; }
+  .fooTopCom {
+    grid-area: footopCom; }
+  .fooBotCom {
+    grid-area: foobotCom; }
+  .headCom {
+    background-size: cover;
+    background-color: #293735;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2% 0; }
+    .headCom .headCom__lista {
+      padding: 0% 4%;
+      margin: 1%;
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border-left: solid #efefef;
+      transition: border 0.5s; }
+      .headCom .headCom__lista:hover {
+        border: solid #efefef; }
+      .headCom .headCom__lista li {
+        padding-top: 0.9%;
+        display: flex;
+        align-items: center;
+        transition: transform 0.4s; }
+        .headCom .headCom__lista li:hover {
+          transform: translateY(-7%); }
+        .headCom .headCom__lista li h2 {
+          width: 100%;
+          font-size: 20px;
+          color: #efefef;
+          display: flex;
+          align-content: center; }
+    .headCom .headCom__titulo {
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .headCom .headCom__titulo img {
+        width: 17%; }
+    .headCom h1 {
+      width: 25%;
+      font-size: 35px;
+      color: #efefef; }
+  .encabezadoCom {
+    margin-bottom: 1.5%; }
+    .encabezadoCom img {
+      width: 100%; }
+    .encabezadoCom div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fbf5ee;
+      padding: 4% 2%;
+      height: 130px; }
+      .encabezadoCom div h5 {
+        padding: 3% 0 3% 4%;
+        font-size: 19px;
+        font-weight: 600; }
+  .back-verde {
+    background-color: #293735;
+    color: #efefef;
+    font-weight: 500; }
+  .contacto-form {
+    padding: 0 3%; }
+  .fooTopCom {
+    background-color: #293735; }
+    .fooTopCom .fooTopCom__lista {
+      padding: 2% 0 0 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      .fooTopCom .fooTopCom__lista h2 {
+        color: #efefef;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5% 0; }
+    .fooTopCom .fooTopCom__topImgCom {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .fooTopCom .fooTopCom__topImgCom img {
+        width: 40px;
+        filter: grayscale(100%);
+        transition: filter 0.4s; }
+        .fooTopCom .fooTopCom__topImgCom img:hover {
+          filter: grayscale(0%); }
+  .fooBotCom {
+    display: flex;
+    align-items: center;
+    background-color: #293735;
+    margin-top: 1px;
+    overflow: hidden; }
+    .fooBotCom h4 {
+      color: #efefef;
+      padding: 20px;
+      font-size: 12px; } }
+
+.headCom a, div.fooTopMCom ul a {
+  text-decoration: none; }
+
+.headCom ul {
+  list-style-type: none;
+  text-transform: uppercase; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
